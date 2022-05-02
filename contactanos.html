@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+    <body>
+        <header>
+            <h1>Home</h1>
+            <nav>
+                <div class="links">
+                    <ul>
+                        <li class="navlist"><a href="index.html">Home</a></li>
+                        <li class="navlist"><a href="contactanos.html">Contacto</a></li>
+                        <li class="navlist"><a href="categorias.html">Categorías</a></li>
+                        <li class="navlist"><a href="top10.html">Top 10</a></li>
+                        <li class="navlist"><a href="detallejuego.html">Detalle de Juego</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form class="contacto" action="archivo.php" method="post">
+                        <!--Text fields-->        
+                        <section>
+                            <!--Text fields-->  
+                            <div class="nombre">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="direccion">
+                                <label for="dirección">Dirección</label>
+                                <input type="text" name="dirección" placeholder="Ingresa tu dirección">
+                            </div>
+                        </section>
+                        <section>
+                            <!--Text area-->
+                            <div class="consulta">
+                                <label for="opinión">Consulta</label>
+                                <textarea name="opinión" placeholder="Ingresa una consulta"></textarea>
+                            </div>
+                        </section>
+                        <section class="radios">
+                            <section>
+                            <!--Radio buttons-->
+                                <input type="radio" name="sexo" value="Femenino" id="femenino">
+                                <label for="femenino">Femenino</label>
+                            </section>
+                            <section>
+                                <input type="radio" name="sexo" value="Masculino" id="masculino">
+                                <label for="masculino">Masculino</label>
+                            </section>
+                            <section>
+                                <input type="radio" name="sexo" value="No binario" id="nobinario">
+                                <label for="nobinario">No binario</label>
+                            </div>
+                            </section>
+                        </section>
+                        <section class="dropdown">
+                            <!--Dropdown-->
+                            <select name="tipoConsulta">
+                                    <option value="q">Queja</option>
+                                    <option value="s">Sugerencia</option>
+                                    <option value="O">Otros</option>
+                            </select>
+                        </section>
+                        <section class="checkbox">
+                            <!--Buttons-->
+                            <div>
+                            <input type="checkbox" name="T&C" value="acepto" id="checkbox">
+                            <label for="checkbox">Aceptar T&C</label>
+                            <input type="submit" value="Enviar formulario">
+                            <input type="reset" value="Borrar">
+                            </div>
+                        </section>
+                </form>
+        </main>   
+        <!--Footer-->
+        <footer class="footer">
+            <h2>Footer</h2>
+            <a href="index.html">Home</a>
+            <a href="contactanos.html">Contacto</a>
+        </footer>
+    </body>
+</html>
